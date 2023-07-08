@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    background-color: #fff;
+}
+
+body
+{
+    background-image: url(https://preview.colorlib.com/theme/chimper/images/hero_1.jpg);
+    background-size: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-color: rgba(0, 0, 0, 0.4 );
+    background-blend-mode: multiply;
+}
+.head1
+{
+    display: flex;
+    font-weight: bold;
+    background-color: white;
+    border-bottom: 1px solid #e9ecef;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+}
+
+.email
+{
+    margin-left: 2%;
+}
+
+.headinfo
+{
+    display: flex;
+    width: 70%;
+    color: #4d4d4d;
+}
+
+.head1 a
+{
+    color: #0d0cb5;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.head1 svg:hover
+{
+    filter: brightness(50%);
+}
+
+.head1 a:hover
+{
+    filter: brightness(30%);
+}
+
+.head1 span
+{
+    display: flex;
+    width: 10%;
+}
+
+.head1 svg
+{
+    fill: #0d0cb5;
+    padding: 10px;
+    height: 5%;
+}
+
+.drop
+{
+    position: relative;
+}
+
+.dropmenu
+{
+    margin-top: 10px;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: 200%;
+    text-align: left;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -99;
+    border-top: 2px solid #0d0cb5;
+}
+
+.drop:hover .dropmenu
+{
+    opacity: 100%;
+    z-index: 99;
+}
+
+.dropmenu>li:hover
+{
+    background-color: #7c7c7c;
+    filter: brightness(1.9);
+    width: 100%;
+}
+
+.dropmenu>li
+{
+    color: black;
+    height: 1vh;
+    padding-top: 1vh;
+    font-size: 14px;
+    width: 100%;
+}
+
+.menuconteiner
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    height: 10vh;
+}
+
+.menuconteiner div
+{
+    margin-right: 7%;
+}
+
+.opcoesmenu li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.menuconteiner a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+.opcoesmenu .menu:hover
+{
+    color: #0d0cb5;
+}
+
+.opcoesmenu svg
+{
+    position: absolute;
+    fill: black;
+    width: 13%;
+    display: inline-block;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+.opcoesmenu svg:hover
+{
+    fill: #0d0cb5;
+}
+
+.introducao
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.introducao h2
+{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 3em;
+}
+
+.introducao p
+{
+    font-size: 18px;
+    letter-spacing: .1em;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: lighter;
+}
+
+.conteinerimg
+{
+    display: grid;
+    position: relative;
+    margin-top: 20%;
+    margin-left: 45px;
+    margin-right: 45px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.conteinerimg div
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.conteinerimg img
+{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.conteinerimg div:hover img
+{
+    transform: scale(1.05);
+    filter: brightness(50%);
+    opacity: 1;
+}
+
+.texthover h2
+{
+    color: #fff;
+    font-weight: lighter;
+}
+.texthover p
+{
+    color: #737373;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+}
+.conteinerimg div:hover span
+{
+    opacity: 1;
+    margin-top: 0;
+}
+
+.texthover
+{
+    position: absolute;
+    text-align: center;
+    margin-top: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.testemonials
+{
+    display: grid;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.testemonials h2
+{
+    font-size: 4em;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.testemonials section 
+{
+    border-bottom: #0d0cb5 solid;
+    width: 8%;
+    display: grid;
+    justify-self: center;
+}
+
+.conteiner
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.carrossel
+{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.navigation
+{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar
+{
+    width: 10px;
+    height: 10px;
+    background-color: #dee2e6;;
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input[name="r"]
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slide
+{
+    width: 20%;
+    transition: 0.6s;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+.txtcarrossel
+{
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.7;
+    color: #4d4d4d;
+}
+
+.personscarrossel
+{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.personscarrossel img
+{
+    border-radius: 50%;
+    width: 4%;
+    margin-right: 5px;
+}
+
+.personscarrossel p
+{
+    line-height: 1.7;
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
+    padding-left: 1px;
+    margin-left: 5px;
+}
+
+.footer
+{
+    background-color: #333333;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 200px 200px 200px 250px;
+    color: #999999;
+    margin-top: 45px;
+}
+.subft
+{
+    margin-right: 15%;
+}
+
+.featuresft p
+{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.featuresft a
+{
+    display: flex;
+    flex-direction: column;
+    color: #999999;
+    text-decoration: none;
+    line-height: 2.1;
+    transition: 0.3s;
+}
+.featuresft a:hover
+{
+    color: #e9ecef;
+}
+
+.followft
+{
+    margin-bottom: 95px;
+}
+
+.followft p
+{
+    color: #fff;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.followft span
+{
+    fill: #999999;
+}
+.followft svg:hover
+{
+    fill: #e9ecef;
+}
+
+.followft svg
+{
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.subft
+{
+    margin-bottom: 70px;
+}
+
+.subft p
+{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.msgft
+{
+    grid-column: span 6;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 90%;
+    color: #737373;
+}
+
+.msgft svg
+{
+    fill: #737373;
+}
+
+.msgft a
+{
+    text-decoration: none;
+    color: #999999;
+    transition: 0.3s;
+}
+.msgft a:hover
+{
+    color: #e9ecef;
+}
+
+.msgft div
+{
+    margin-top: 30px;
+}
+
+.subft input
+{
+    width: 60%;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 12px 20px;
+    border-radius: 50px 0 0 50px;
+    background: #333333;
+    font-size: 16px;
+    color: #fff;
+}
+
+.subft a
+{
+    border-radius: 0 50px 50px 0;
+    background-color: #0d0cb5;
+    border-color: #0d0cb5;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+}
+
